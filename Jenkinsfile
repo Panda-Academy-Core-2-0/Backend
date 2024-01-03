@@ -10,6 +10,7 @@ pipeline {
     
     environment {
         scannerHome = tool 'SonarQube'
+        PIP_BREAK_SYSTEM_PACKAGES = 1
     }
 
     stages {
