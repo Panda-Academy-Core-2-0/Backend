@@ -44,7 +44,7 @@ pipeline {
             }
         }
 
-        stage ('Pushing image to Artifactory') {
+        stage ('Pushing image to docker registry') {
             steps {
                 script {
                     docker.withRegistry("$dockerRegistry", "$registryCredentials") {
